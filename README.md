@@ -1,9 +1,8 @@
 # Full Stack React Express Application
 
 ## Introduction
-This repository contains integration tests using Cypress for a Full Stack Express / React application: https://superporra2021.herokuapp.com/
+This repository contains integration tests using Cypress for a Full Stack Express / React application: https://superporra2021.herokuapp.com/ (which repository is private)
   
-This application consists of Front End component (located in the `app` directory) that is built with Redux and React. It also has a Back End component (located in the `server` directory) that uses Express to manage.
 
 ## Installation
 Clone this repository:
