@@ -1,7 +1,11 @@
 # Full Stack React Express Application
 
 ## Introduction
-This repository contains integration tests using Cypress for a Full Stack Express / React application: https://superporra2021.herokuapp.com/ (which repository is private)
+This repository contains integration tests for a Full Stack Express / React application: https://superporra2021.herokuapp.com/ (which repository is private)
+
+Cypress is used for tests in Chrome browser.
+
+In progress -> TestCafe is used for tests in Safari browser.
   
 
 ## Installation
@@ -15,7 +19,8 @@ Go to repo directory and install dependencies:
 npm install
 ```
 
-Now, either open Cypress UI:
+## Cypress tests - Chrome
+Either open Cypress UI:
 
 ```
 npm run cy:open
