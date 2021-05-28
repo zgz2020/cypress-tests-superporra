@@ -2,12 +2,12 @@ export const baseUrl = 'https://superporra-dev.herokuapp.com/'
 
 export const viewports = [ 
     {
-        name: 'macbook',
+        name: 'desktop',
         width: 1280,
         height: 670
     },
     {
-        name: 'iPhone-6',
+        name: 'mobile',
         width: 375,
         height: 667
     },

@@ -9,7 +9,6 @@ viewports.forEach(viewport => {
     languages.forEach(language => {
         test(`Homepage -  ${viewport.name} - ${language}`, async t => {
             await t.resizeWindow(viewport.width, viewport.height)
-
             await common.selectLanguage(language)
         
             await t.click(homepage.homepageSignUpLink)
