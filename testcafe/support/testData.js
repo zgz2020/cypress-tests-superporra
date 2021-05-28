@@ -1,4 +1,17 @@
-export const viewports = ['macbook-15', 'iphone-6']
+export const baseUrl = 'https://superporra-dev.herokuapp.com/'
+
+export const viewports = [ 
+    {
+        name: 'macbook',
+        width: 1280,
+        height: 670
+    },
+    {
+        name: 'iPhone-6',
+        width: 375,
+        height: 667
+    },
+]
 
 export const languages = ['english', 'spanish']
 

@@ -1,4 +1,4 @@
-import { Selector, t } from 'testcafe'
+import { t } from 'testcafe'
 import { ClientFunction } from 'testcafe'
 
 const getLocation = ClientFunction(() => document.location.href)
@@ -25,4 +25,4 @@ class Page {
     }
 }
 
-export default new Page();
+export default new Page()

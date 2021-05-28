@@ -1,37 +1,19 @@
 import homepage from '../page-models/homepage-model'
-import { languages } from '../support/testData'
+import { baseUrl, viewports, languages } from '../support/testData'
 
-fixture `homepage - desktop`
-    .page `https://superporra-dev.herokuapp.com/`
-    .beforeEach( async t => {
-        await t
-            .resizeWindow(1280, 670)
-    })
+fixture `homepage`
+    .page `${baseUrl}`
 
-languages.forEach(language => {
-    test(`Homepage - Desktop - ${language}`, async t => {
-        await homepage.selectLanguage(language)
-    
-        await t.click(homepage.homepageSignUpLink)
+viewports.forEach(viewport => {
+    languages.forEach(language => {
+        test(`Homepage -  ${viewport.name} - ${language}`, async t => {
+            await t.resizeWindow(viewport.width, viewport.height)
+
+            await homepage.selectLanguage(language)
         
-        await homepage.verifyUrl('/join')
-    })
-})
-
-
-fixture `homepage - iPhone-6`
-    .page `https://superporra-dev.herokuapp.com/`
-    .beforeEach( async t => {
-        await t
-            .resizeWindow(375, 667)
-    })
-    
-languages.forEach(language => {
-    test(`Homepage - iPhone 6 - &{language}`, async t => {
-        await homepage.selectLanguage(language)
-    
-        await t.click(homepage.homepageSignUpLink)
-    
-        await homepage.verifyUrl('/join')
+            await t.click(homepage.homepageSignUpLink)
+            
+            await homepage.verifyUrl('/join')
+        })
     })
 })
