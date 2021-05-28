@@ -6,7 +6,8 @@
   "scripts": {
     "cy:open": "npx cypress open",
     "cy:test": "cypress run --headless --spec=cypress/tests/*.test.js --browser chrome",
-    "test": "testcafe chrome testcafe/tests"
+    "tc:chrome": "testcafe chrome testcafe/tests",
+    "tc:safari": "testcafe safari testcafe/tests"
   },
   "author": "",
   "license": "ISC",
