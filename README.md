@@ -5,7 +5,7 @@ This repository contains integration tests for a Full Stack Express / React appl
 
 Cypress is used for tests in Chrome browser.
 
-In progress -> TestCafe is used for tests in Safari browser.
+TestCafe is used for tests in Safari browser (in progress).
   
 
 ## Installation
@@ -30,4 +30,11 @@ Or run the tests in the concole:
 
 ```
 npm run cy:test
+```
+
+## TestCafé tests - Safari
+Run the tests in the concole:
+
+```
+npm run tc:safari
 ```
