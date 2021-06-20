@@ -1,7 +1,7 @@
 # Full Stack React Express Application
 
 ## Introduction
-This repository contains integration tests for a Full Stack Express / React application: https://superporra2021.herokuapp.com/ (which repository is private)
+This repository contains integration tests for a Full Stack Express / React application: https://superporra2021.herokuapp.com/ (which repository is private - access granted upon request)
 
 Cypress is used for tests in Chrome browser.
 
